@@ -7,6 +7,7 @@ module.exports = class NewsService  {
     this.page = pageData;
     this.isLoaded = false;
     this.data = [];
+    this.count = 0;
     this._load();
   }
 
@@ -23,11 +24,16 @@ module.exports = class NewsService  {
       news.push(item);
     });
     this.data = news;
+    this.count = news.length;
     this.isLoaded = true;
   }
 
   getData() {
     return this.data;
+  }
+
+  getCount() {
+    return this.count;
   }
 
   static async init() {
