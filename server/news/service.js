@@ -20,7 +20,8 @@ module.exports = class NewsService  {
       item.rank = $(element).children('.title').children('.rank').text().replace('.', '');
       item.title = $(element).children('.title').children('.storylink').text();
       item.points = $(`#score_${item.id}`).text().replace('points', '').trim();
-      item.comments = $(`a[href^="item?id=${item.id}"]`).text().split('ago')[1].replace('comments', '').trim();
+      const comments = $(`a[href^="item?id=${item.id}"]`).text().split('ago')[1].replace('comment', '').replace('s', '').trim();
+      item.comments = isNaN(parseInt(comments, 10)) ? "0" : comments;
       news.push(item);
     });
     this.data = news;
