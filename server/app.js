@@ -6,7 +6,7 @@ class AppFactory {
   getApp() {
     const app = express();
     this._setupRoutes(app);
-
+    this._setupMiddleware(app);
     app.info = {'startTime': new Date()};
     return app;
   }
@@ -16,6 +16,11 @@ class AppFactory {
     routesFiles.forEach((file) => {
       require(path.join(process.cwd(), file))(app);
     });
+  }
+
+  _setupMiddleware(app) {
+    const file = 'server/common/middleware.js';
+    require(path.join(process.cwd(), file))(app);
   }
 }
 
