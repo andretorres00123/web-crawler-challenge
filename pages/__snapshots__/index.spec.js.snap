@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home page should renders the home page 1`] = `
+<ul>
+  <li>
+    <a
+      href="/a"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+    >
+      a
+    </a>
+  </li>
+  <li>
+    <a
+      href="/b"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+    >
+      b
+    </a>
+  </li>
+</ul>
+`;
