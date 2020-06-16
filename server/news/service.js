@@ -19,14 +19,19 @@ module.exports = class NewsService  {
       item.id = $(element).attr('id');
       item.rank = $(element).children('.title').children('.rank').text().replace('.', '');
       item.title = $(element).children('.title').children('.storylink').text();
-      item.points = $(`#score_${item.id}`).text().replace('points', '').trim();
-      const comments = $(`a[href^="item?id=${item.id}"]`).text().split('ago')[1].replace('comment', '').replace('s', '').trim();
-      item.comments = isNaN(parseInt(comments, 10)) ? "0" : comments;
+      item.points = this._getOnlyNumber($(`#score_${item.id}`).text());
+      item.comments = this._getOnlyNumber($(`a[href^="item?id=${item.id}"]`).text().split('ago')[1]);
       news.push(item);
     });
     this.data = news;
     this.count = news.length;
     this.isLoaded = true;
+  }
+
+  _getOnlyNumber(text) {
+    var regex = /\d+/g;
+    var matches = text.match(regex);
+    return matches ? parseInt(matches[0], 10) : 0;
   }
 
   getData() {
