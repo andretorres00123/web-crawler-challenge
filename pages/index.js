@@ -2,6 +2,7 @@ import React from 'react';
 import { Box } from 'rebass';
 import { connect } from 'react-redux';
 import HomeHeader from '../components/widgets/HomeHeader';
+import NewsList from '../components/widgets/NewsList';
 import Actions from '../statemanagement/actions';
 
 class Home extends React.Component {
@@ -21,6 +22,7 @@ class Home extends React.Component {
     return (
       <Box>
         <HomeHeader />
+        <NewsList />
       </Box>
     );
   }
