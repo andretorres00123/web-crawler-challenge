@@ -36,7 +36,7 @@ const expectedSuccessData = [
 
 describe('News Routes', () => {
   let app, axios;
-  const appPath = '/api';
+  const appPath = '/crawler';
 
   beforeAll(() => {
     const appData = buildAppForSuccess();
