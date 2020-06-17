@@ -1,16 +1,35 @@
+import React from 'react';
 import { Box } from 'rebass';
+import { connect } from 'react-redux';
 import HomeHeader from '../components/widgets/HomeHeader';
+import Actions from '../statemanagement/actions';
 
-function Home() {
-  return (
-    <Box>
-      <HomeHeader />
-    </Box>
-  );
+class Home extends React.Component {
+
+  static async getInitialProps() {
+    return {
+      namespacesRequired: ['common'],
+    };
+  }
+
+  componentDidMount() {
+    const { getAllNews } = this.props;
+    getAllNews();
+  }
+
+  render() {
+    return (
+      <Box>
+        <HomeHeader />
+      </Box>
+    );
+  }
 }
 
-Home.getInitialProps = async () => ({
-  namespacesRequired: ['common'],
-});
+const { getAllNews } = Actions;
 
-export default Home;
+export { Home };
+
+export default connect(null, {
+  getAllNews,
+})(Home);
