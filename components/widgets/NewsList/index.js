@@ -1,10 +1,12 @@
 import React from 'react';
-import { Box } from 'rebass';
+import { Box, Flex } from 'rebass';
 import { connect } from 'react-redux';
-import { Loader } from '../../elements';
+import { Loader, Title } from '../../elements';
+import { useTranslation } from '../../../i18n';
 import NewRow from '../NewRow';
 
 function NewList({ news, loading }) {
+  const { t } = useTranslation();
 
   if (loading) {
     return (
@@ -14,8 +16,20 @@ function NewList({ news, loading }) {
     );
   }
 
+  const getColumnName = (width, text) => (
+    <Box width={width} px={4}>
+      <Title fontSize="16px" color="darkGray">{text}</Title>
+    </Box>
+  );
+
   return (
-    <Box mt={4} px={['20px', '40px', '160px']}>
+    <Box my={5} px={['20px', '40px', '160px']}>
+      <Flex flexWrap="wrap" mt={2}>
+        {getColumnName(1 / 10, t('news-column-name-rank'))}
+        {getColumnName(9 / 20, t('news-column-name-title'))}
+        {getColumnName(1 / 5, t('news-column-name-comments'))}
+        {getColumnName(1 / 5, t('news-column-name-points'))}
+      </Flex>
       {news.map((item) => (
         <NewRow key={item.id} data={item} />
       ))}

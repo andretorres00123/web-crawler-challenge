@@ -3,5 +3,10 @@
   "home-title-author": "por Andre Torres",
 
   "news-comments": "comentarios",
-  "news-points": "puntos"
+  "news-points": "puntos",
+
+  "news-column-name-rank": "POSICION",
+  "news-column-name-title": "TITULO",
+  "news-column-name-comments": "COMENTARIOS",
+  "news-column-name-points": "PUNTOS"
 }

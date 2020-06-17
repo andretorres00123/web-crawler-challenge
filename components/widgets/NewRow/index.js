@@ -5,9 +5,10 @@ import { NewWrapper, RankTitle, Title } from './elements';
 
 function NewRow({ data }) {
   const { t } = useTranslation();
+
   return (
     <NewWrapper flexWrap="wrap" mt={2}>
-      <Box width={2 / 20} px={4}>
+      <Box width={1 / 10} px={4}>
         <RankTitle>{data.rank}</RankTitle>
       </Box>
       <Box width={9 / 20} px={4}>
