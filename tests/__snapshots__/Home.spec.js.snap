@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home page should match with the snapshot 1`] = `
+<div
+  className="css-vurnku"
+>
+  <div
+    className="css-1hwv0r3"
+  >
+    <div
+      className="css-vurnku"
+    >
+      <div
+        className="sc-AxjAm kAbRxt css-vurnku"
+      >
+        home-title
+      </div>
+      <div
+        className="css-1lx7oj"
+      >
+         home-title-author
+      </div>
+    </div>
+  </div>
+  <div
+    className="css-h1u7m2"
+  >
+    <div
+      className="css-hphxtc"
+    >
+      <div
+        className="css-qpwnd"
+      >
+        <div
+          className="sc-AxjAm kAbRxt css-1dnv0i3"
+        >
+          news-column-name-rank
+        </div>
+      </div>
+      <div
+        className="css-6ha5j8"
+      >
+        <div
+          className="sc-AxjAm kAbRxt css-1dnv0i3"
+        >
+          news-column-name-title
+        </div>
+      </div>
+      <div
+        className="css-e7q5pv"
+      >
+        <div
+          className="sc-AxjAm kAbRxt css-1dnv0i3"
+        >
+          news-column-name-comments
+        </div>
+      </div>
+      <div
+        className="css-e7q5pv"
+      >
+        <div
+          className="sc-AxjAm kAbRxt css-1dnv0i3"
+        >
+          news-column-name-points
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
