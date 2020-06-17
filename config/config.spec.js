@@ -10,7 +10,7 @@ describe('config', () => {
       expect(config).toEqual(expect.objectContaining({
         'app': expect.objectContaining({
           'port': expect.any(Number),
-          'path': '/api',
+          'path': '/crawler',
         }),
         'crawler': expect.objectContaining({
           'url': 'https://news.ycombinator.com/',
