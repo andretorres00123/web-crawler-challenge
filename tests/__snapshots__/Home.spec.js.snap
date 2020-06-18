@@ -23,6 +23,38 @@ exports[`Home page should match with the snapshot 1`] = `
     </div>
   </div>
   <div
+    className="css-1b2tw1j"
+  >
+    <div
+      className="sc-AxgMl hQfuHX"
+    >
+      <input
+        checked={true}
+        name="filters"
+        onChange={[Function]}
+        type="radio"
+        value="all"
+      />
+      home-filters-all-value
+      <input
+        checked={false}
+        name="filters"
+        onChange={[Function]}
+        type="radio"
+        value="longTitles"
+      />
+      home-filters-long-titles-value
+      <input
+        checked={false}
+        name="filters"
+        onChange={[Function]}
+        type="radio"
+        value="shortTitles"
+      />
+      home-filters-short-titles-value
+    </div>
+  </div>
+  <div
     className="css-h1u7m2"
   >
     <div

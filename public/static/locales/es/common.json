@@ -1,6 +1,9 @@
 {
   "home-title": "WEB CRAWLER",
   "home-title-author": "por Andre Torres",
+  "home-filters-all-value": "Todas las Noticias",
+  "home-filters-long-titles-value": "Títulos Largos",
+  "home-filters-short-titles-value": "Títulos Cortos",
 
   "news-comments": "comentarios",
   "news-points": "puntos",
