@@ -3,7 +3,7 @@ Web Crawler implemented with NextJS
 
 This project use scraping techniques to extract the first 30 entries from https://news.ycombinator.com/ .
 
-A live demo of this project is deployed in .
+A live demo of this project is deployed in https://web-crawler-uihsxyrf7a-ue.a.run.app/ .
 
 ## Install dependencies
 ```
