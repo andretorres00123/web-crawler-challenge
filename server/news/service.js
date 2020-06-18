@@ -65,7 +65,7 @@ module.exports = class NewsService {
   }
 
   _orderByComments(news) {
-    return news.sort((a, b) => b.comments - a.comments);
+    return news.concat().sort((a, b) => b.comments - a.comments);
   }
 
   _loadShortTitlesByPoints() {
@@ -90,7 +90,7 @@ module.exports = class NewsService {
   }
 
   _orderByPoints(news) {
-    return news.sort((a, b) => b.points - a.points);
+    return news.concat().sort((a, b) => b.points - a.points);
   }
 
   _getOnlyNumber(text) {
