@@ -10,7 +10,7 @@ function NewList({ news, loading }) {
 
   if (loading) {
     return (
-      <Box mt={4}>
+      <Box mt={6}>
         <Loader />
       </Box>
     );
