@@ -21,7 +21,7 @@
     "cheerio": "^1.0.0-rc.3",
     "express": "^4.17.1",
     "glob": "^7.1.6",
-    "next": "^9.4.4",
+    "next": "^11.1.0",
     "next-i18next": "^4.4.2",
     "next-redux-wrapper": "5.0.0",
     "react": "^16.13.1",
